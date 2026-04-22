@@ -512,7 +512,7 @@ html, body {
           <span class="region">🌿</span>பாலக்காடு<br><small>Kerala Tamil</small>
         </button>
         <button class="slang-btn" onclick="selectDialect('telugu','தெலுங்கு','Telugu Mixed')" id="d-telugu">
-          <span class="region">⭐</span>தெலுங்கு கலந்த<br><small>Telugu Mixed</small>
+          <span class="region">⭐</span>தெலுங்கு தமிழ்<br><small>Telugu Mixed</small>
         </button>
         <button class="slang-btn" onclick="selectDialect('ilangai','இலங்கை தமிழ்','Eelam Tamil')" id="d-ilangai">
           <span class="region">🌴</span>இலங்கை தமிழ்<br><small>Eelam Tamil</small>
@@ -823,6 +823,90 @@ const MEANING_MAP = [
   { p:['munadi','முனாடி'], a:[], std:'முன்பு', eng:'Before / Earlier', c:94 },
   { p:['ulley','உள்ளே'], a:[], std:'உள்ளே', eng:'Inside', c:94 },
   { p:['veliye','வெளியே'], a:[], std:'வெளியே', eng:'Outside', c:94 },
+  
+  // FRIENDS / EXPRESSIONS
+  { p:['ela','லே','ஏல'], a:[], std:'ஏய்', eng:'Hey! / Call to a friend', c:91 },
+  { p:['makka','மக்கா'], a:[], std:'நண்பன்', eng:'Friend / Buddy', c:91 },
+  { p:['choli','சோலி'], a:[], std:'வேலை / பணி', eng:'Work / Task', c:91 },
+  { p:['pla','ப்ள'], a:[], std:'போல', eng:'Suffix meaning "it seems"', c:91 },
+  { p:['anney','அண்ணே','atthaan','அத்தான்','machaan','மச்சான்'], a:[], std:'சகோதரன் / உறவினர்', eng:'Brother / Cousin', c:91 },
+  { p:['kottikaren','கொட்டிக்காரன்','kottikaaram','கொட்டிக்காரம'], a:[], std:'முட்டாள்', eng:'Foolish person', c:91 },
+  { p:['inganakula','இனகுல','anganakula','அங்ககுல'], a:[], std:'அருகில் / அங்கே', eng:'Nearby / There', c:91 },
+  { p:['purathala','புறத்தால','purathalaiya','புறத்தாலைய'], a:[], std:'பின்புறம்', eng:'Backside / Behind', c:91 },
+  { p:['kaangala','காங்களா'], a:[], std:'காணவில்லை', eng:'Not seen / Not found', c:91 },
+  { p:['yekka','யெக்கா'], a:[], std:'அக்கா', eng:'Elder Sister', c:91 },
+  { p:['araali','அராளி'], a:[], std:'அற்புதம்', eng:'Fantastic / Excellent', c:91 },
+
+  // Palakkad Tamil Slang
+  { p:['aagam','ஆகம்'], a:[], std:'வீடு', eng:'Home / House', c:96 },
+  { p:['amuddu','அமுது'], a:[], std:'அன்னம் / உணவு', eng:'Rice / Food', c:96 },
+  { p:['aambadiyaan','ஆம்படியான்','aambadiyaal','ஆம்படியாள்'], a:[], std:'கணவன் / மனைவி', eng:'Husband or Wife', c:96 },
+  { p:['vattaa','வட்டா'], a:[], std:'கோப்பை', eng:'Mug', c:96 },
+  { p:['upperi','உப்பேரி'], a:[], std:'பொரியல் / பக்கக்காரம்', eng:'Side dish / Poriyal', c:96 },
+  { p:['oodu','ஓடு'], a:[], std:'வீடு', eng:'House (instead of Veedu)', c:96 },
+  { p:['chertaa','சேர்டா'], a:[], std:'தேங்காய் ஓடு', eng:'Coconut shell', c:96 },
+  { p:['machi','மச்சி'], a:[], std:'மேடை / மாடி', eng:'Terrace', c:96 },
+
+  // Common fillers & phrases
+  { p:['eiii','ஏயி','ohh','ஓஹ்'], a:[], std:'உரையாடல் தொடக்கச் சொற்கள்', eng:'Sentence starters / fillers', c:96 },
+  { p:['enna_vaakum_pannindrukai','என்ன வாக்கும் பண்ணின்டுருகை'], a:[], std:'நீ என்ன செய்கிறாய்?', eng:'What are you doing?', c:96 },
+  { p:['chuvama_irukiyala','சுவமா இருக்கியலா'], a:[], std:'நலமா?', eng:'Are you fine / doing well?', c:96 },
+  { p:['thoora_po','தூர போ'], a:[], std:'பக்கத்திற்கு போ', eng:'Go aside / Move', c:96 },
+
+  // Cultural context words
+  { p:['taan','தான்'], a:[], std:'காய்கறி', eng:'Vegetables (instead of Kashnam)', c:96 },
+  { p:['korakarudhu','கொரகருது'], a:[], std:'இருமல்', eng:'Coughing (described like dog barking)', c:96 },
+  { p:['thoorardhu','தூரருது'], a:[], std:'சிறு மழை', eng:'Drizzle (misunderstood as dysentery in TN)', c:96 },
+
+
+  // Kanyakumari Slang Words
+  { p:['bonju','போஞ்சு'], a:[], std:'எலுமிச்சை சாறு', eng:'Lemon juice', c:93 },
+  { p:['visarpu','விசர்ப்பு'], a:[], std:'வியர்வை', eng:'Sweat', c:93 },
+  { p:['kalla_pandam','கள்ள பண்டம்'], a:[], std:'அருவருப்பான உணவு / ஜங்க் உணவு', eng:'Junk food / Snacks', c:93 },
+  { p:['kalachi','களச்சி'], a:[], std:'கோலி', eng:'Marble (toy)', c:93 },
+  { p:['iraichi','இறைச்சி'], a:[], std:'மாமிசம்', eng:'Meat', c:93 },
+  { p:['chakka_pazham','சக்கா பழம்'], a:[], std:'பலாப்பழம்', eng:'Jackfruit', c:93 },
+  { p:['toya','தோய'], a:[], std:'உரையாடல் இடைச்சொல்', eng:'Conversational filler / Local comedy word', c:93 },
+  // Coimbatore Slang Words & Phrases
+  { p:['neerattulaye','நேரத்துலயே'], a:[], std:'முன்கூட்டியே', eng:'Early / Ahead of time', c:97 },
+  { p:['appalaiye','அப்பளையே'], a:[], std:'மிகவும் முன்கூட்டியே', eng:'Even earlier / Right then', c:97 },
+  { p:['vesaya','வெசயா','verasa','வெரசா'], a:[], std:'விரைவாக', eng:'Fast / Quickly', c:97 },
+  { p:['akkathadi','அக்கத்தடி','akathale','அக்கத்தாலே'], a:[], std:'அந்த பக்கம்', eng:'That side / Over there', c:97 },
+  { p:['keragam','கெரகம்'], a:[], std:'உச்சரிப்பு / ஆச்சரியம்', eng:'Exclamation (shock / expletive)', c:97 },
+  { p:['ooriyaattam','ஊரியாட்டம்'], a:[], std:'சண்டை / வாதம்', eng:'Fighting / Argument', c:97 },
+  { p:['vegu_vegunu','வெகு வெகுனு'], a:[], std:'அவசரமாக', eng:'Urgently', c:97 },
+  { p:['pozhutoda','பொழுது ஓட'], a:[], std:'மாலை', eng:'Evening', c:97 },
+  { p:['kukkunga','குக்குங்க'], a:[], std:'உட்காருங்கள்', eng:'Sit down (respectful)', c:97 },
+  { p:['oorpatta','ஊர்ப்பட்ட'], a:[], std:'அதிகம்', eng:'A lot / Many', c:97 },
+  { p:['vattal','வட்டல்'], a:[], std:'தட்டு', eng:'Plate', c:97 },
+  { p:['sollai','சொல்லை'], a:[], std:'கொசு', eng:'Mosquito', c:97 },
+
+  // Unique Grammatical Features
+  { p:['-amma','அம்ம'], a:[], std:'-அமாம் (எவிடென்ஷியல்)', eng:'Suffix of evidentiality (it seems)', c:97 },
+  { p:['-akku','அக்கு'], a:[], std:'-அதுக்கு', eng:'Verb suffix replacing "-atukku"', c:97 },
+  { p:['-ngo','ஙொ'], a:[], std:'-ங்க', eng:'Respectful verb ending (vango, saaptngo)', c:97 },
+  { p:['pronoun_-ya','யா'], a:[], std:'-ஐ', eng:'Accusative pronoun ending variation', c:97 },
+
+  // Unique Phrases
+  { p:['malaarunu_sooliya_mudi','மலாரூனு சூலிய முடி'], a:[], std:'வேலை விரைவாக முடி', eng:'Finish the work quickly', c:97 },
+  { p:['enna_vesaya_kukkunga','என்ன வெசயா குக்குங்க'], a:[], std:'விரைவாக உட்காருங்கள்', eng:'Sit down fast', c:97 },
+  { p:['seruppu_thottutu_po','செருப்பு தொட்டுட்டு போ'], a:[], std:'செருப்பு எடுத்து போ', eng:'Take your sandals and go', c:97 },
+  // Chennai Slang Words
+  { p:['semma','செம்ம'], a:[], std:'அற்புதம் / மிகச் சிறந்தது', eng:'Awesome / Great / Extreme', c:98 },
+  { p:['machi','மச்சி'], a:[], std:'நண்பன்', eng:'Dude / Friend / Bro', c:98 },
+  { p:['gethu','கெத்து'], a:[], std:'ஸ்டைல் / பெருமை', eng:'Style / Swag / Coolness', c:98 },
+  { p:['mokka','மொக்க'], a:[], std:'சலிப்பு / பயனற்றது', eng:'Lame / Boring / Useless', c:98 },
+  { p:['vera_level','வேற லெவல்'], a:[], std:'அடுத்த நிலை', eng:'Next level / Exceptional', c:98 },
+  { p:['bejaaru','பெஜாரு'], a:[], std:'பிரச்சனை / கவலை', eng:'Problem / Tension / Frustrating situation', c:98 },
+  { p:['local','லோகல்'], a:[], std:'உள்ளூர் / தெருவோன்', eng:'Rough / Street-style / Knows the area well', c:98 },
+  { p:['aattai','ஆட்டை'], a:[], std:'திருடு', eng:'To steal / Snatch', c:98 },
+  { p:['kasmalam','கஸ்மாலம்'], a:[], std:'அழுக்கு / தரமற்றது', eng:'Dirty / Filthy / Low-quality', c:98 },
+  { p:['usharu','உஷார்'], a:[], std:'எச்சரிக்கை / புத்திசாலி', eng:'Cautious / Alert / Smart', c:98 },
+  { p:['sappa_matter','சப்பா மேட்டர்'], a:[], std:'எளிய விஷயம்', eng:'Easy / Insignificant thing', c:98 },
+  { p:['saavu_girakki','சாவு கிராக்கி'], a:[], std:'பயனற்றவன் / தொல்லை கொடுப்பவன்', eng:'Useless / Annoying fellow', c:98 },
+  { p:['takkaru','தக்கரு'], a:[], std:'சிறந்தது', eng:'Superb / Excellent', c:98 },
+  { p:['vetti','வெட்டி'], a:[], std:'வேலை இல்லாதவன்', eng:'Unemployed / Doing nothing', c:98 },
+    
   // FILLERS / MISC
   { p:['summa','சும்மா'], a:[], std:'வெறுமனே', eng:'Just casually / For no reason', c:93 },
   { p:['scene'], a:[], std:'நிலைமை / சூழல்', eng:'Situation / Scene', c:90 },
