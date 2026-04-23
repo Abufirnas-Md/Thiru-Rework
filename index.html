@@ -766,6 +766,59 @@ const MEANING_MAP = [
   { p:['bro'], a:[], std:'சகோதரன்', eng:'Bro!', c:90 },
   { p:['amma','அம்மா'], a:[], std:'அன்னையே!', eng:'Mother / Oh my!', c:99 },
   { p:['thala','தலை'], a:[], std:'தலைவர்!', eng:'Leader / Boss!', c:93 },
+  // Tirunelveli Village Slang Dataset (Words + Sentences)
+const tirunelveliSlang = [
+  // Greetings
+  { p:['suvama_irukkiyala','சுவமா இருக்கியலா'], std:'நலமா?', eng:'Are you doing well?', c:801 },
+  { p:['suvamdhaana','சுவம்தானா'], std:'நலமா?', eng:'Are you fine?', c:801 },
+  { p:['enna_samayam','என்ன சமயம்'], std:'நேரம் என்ன?', eng:'What’s the time?', c:801 },
+
+  // Addressing People
+  { p:['elei','எலே'], std:'நண்பன்', eng:'Dude / Guy', c:801 },
+  { p:['yala','யல'], std:'நண்பன்', eng:'Friend (casual)', c:801 },
+  { p:['yabla','யப்லா'], std:'பெண்', eng:'Girl / Woman', c:801 },
+  { p:['annaachi','அண்ணாச்சி'], std:'அண்ணா / கடைக்காரர்', eng:'Respectful address (shopkeeper/elder)', c:801 },
+  { p:['aachi','ஆச்சி'], std:'பாட்டி', eng:'Grandmother / Elderly woman', c:801 },
+  { p:['payavulla','பயவுல்ல'], std:'பையன்', eng:'Fellow / Boy', c:801 },
+  { p:['payaluva','பயலுவா'], std:'பையன்', eng:'Boy / Fellow', c:801 },
+
+  // Action Phrases
+  { p:['room_thooka_poran','ரூம் தூக்க போறன்'], std:'அறையை சுத்தம் செய்கிறேன்', eng:'I’m going to sweep the room', c:801 },
+  { p:['oru_ettu_vandhuttu_ponga','ஒரு எட்டு வந்துட்டு போங்க'], std:'சிறிது நேரம் வாருங்கள்', eng:'Come over for a while', c:801 },
+  { p:['paiya_po','பைய போ'], std:'மெதுவாக போ', eng:'Go slowly / Softly', c:801 },
+  { p:['seruppu_thottuttu_vaanga','செருப்பு தொட்டுட்டு வாங்க'], std:'செருப்பு அணிந்து வாருங்கள்', eng:'Wear your slippers and come', c:801 },
+  { p:['thala_seevu','தல சீவு'], std:'முடியை சீவு', eng:'Comb your hair', c:801 },
+  { p:['oru_pidi_sapadu_vaanga','ஒரு பிடி சாப்பாடு வாங்க'], std:'சிறிது உணவு எடுத்து வாருங்கள்', eng:'Bring a handful of food', c:801 },
+  { p:['paiya_pesunga','பைய பேசுங்க'], std:'மெதுவாக பேசுங்கள்', eng:'Speak softly', c:801 },
+
+  // Common Endings
+  { p:['vanthapla','வந்தப்ள'], std:'வந்தது போல', eng:'It seems he came', c:801 },
+  { p:['choliyatthu','சோலியாத்து'], std:'வேலை இல்லாமல்', eng:'Without work', c:801 },
+  { p:['unga','உங்க'], std:'உங்கள்', eng:'Your (respectful suffix)', c:801 },
+  { p:['yala','யல'], std:'நண்பன்', eng:'Suffix for addressing casually', c:801 },
+
+  // Unique Vocabulary
+  { p:['kooruketta','கூருகெட்ட'], std:'முட்டாள்', eng:'Dull-minded person', c:801 },
+  { p:['pottachi','பொட்டாச்சி'], std:'பெண்', eng:'Girl', c:801 },
+  { p:['inganakula','இனகுல'], std:'அருகில்', eng:'Nearby', c:801 },
+  { p:['anganakula','அங்ககுல'], std:'அங்கே', eng:'Inside / There', c:801 },
+  { p:['nikki','நிக்கி'], std:'நின்று', eng:'Standing / Waiting', c:801 },
+  { p:['pidikki','பிடிக்கி'], std:'பிடிக்கும்', eng:'Like / Holding', c:801 },
+  { p:['aapu','ஆப்பு'], std:'தோல்வி / பிரச்சனை', eng:'Trouble / Failure', c:801 },
+  { p:['pattikadu','பட்டிக்காடு'], std:'கிராமம்', eng:'Village / Countryside', c:801 },
+  { p:['vayadi','வயடி'], std:'அதிகம் பேசுபவன்', eng:'Talkative / Gossip person', c:801 },
+  { p:['suththi','சுத்தி'], std:'சுற்றி', eng:'Around / Nearby', c:801 },
+  { p:['thanni','தண்ணி'], std:'தண்ணீர்', eng:'Water', c:801 },
+  { p:['pattasu','பட்டாசு'], std:'வெடிகுண்டு', eng:'Firecracker (lively person)', c:801 },
+  { p:['kudumi','குடுமி'], std:'முடி', eng:'Hair tuft (teasing)', c:801 },
+  { p:['sattai','சட்டை'], std:'சட்டை', eng:'Shirt / Dress', c:801 },
+
+  // Sample Sentences
+  { p:['elei_enna_pannare','எலே என்ன பண்ணறே'], std:'நண்பா, என்ன செய்கிறாய்?', eng:'Dude, what are you doing?', c:801 },
+  { p:['yabla_engada_pora','யப்லா எங்க போற'], std:'பெண்ணே, எங்கே போகிறாய்?', eng:'Girl, where are you going?', c:801 },
+  { p:['annaachi_tea_kudikkalama','அண்ணாச்சி டீ குடிக்கலாமா'], std:'அண்ணாச்சி, டீ குடிப்போமா?', eng:'Shopkeeper, shall we have tea?', c:801 },
+  { p:['aachi_samayam_enna','ஆச்சி சமயம் என்ன'], std:'பாட்டி, நேரம் என்ன?', eng:'Grandma, what’s the time?', c:801 },
+  { p:['payavulla_vandhuttan','பயவுல்ல வந்துட்டான்'], std:'பையன் வந்தான்', eng:'The fellow came.', c:801 }
   // COMMANDS
   { p:['vaa','வா'], a:[], std:'வாருங்கள்!', eng:'Come here!', c:91 },
   { p:['po','போ'], a:[], std:'போகுங்கள்!', eng:'Go away!', c:90 },
